@@ -1,0 +1,37 @@
+*{margin: 0;padding: 0;}
+.layer{
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border:1px solid #bbb;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #bbb;/* 水平阴影的位置, 垂直阴影的位置,模糊距离,阴影的尺寸,阴影的颜色,inset/outset*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/* transform 属性向元素应用 2D 或 3D转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。translate(x,y)定义2D转换。*/
+}
+.layer h2{
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+.layer p{
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 1.5;
+}
+.layer button{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin: 30px auto 0;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	border:0;
+	border-radius: 5px;
+	cursor: pointer;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗</title>
+	<link rel="stylesheet" href="layer.css">
+</head>
+<body>
+    <!-- <div class="layer" style="display: none;">
+    		<h2>提示</h2>
+    		<p>认识前端—从一个弹窗说起！</p>
+    		<button>知道了</button>
+    </div> -->
+    <button id="button">点击这个按钮出现弹窗</button>
+    
+    <script src="layer.js"></script>
+	<script>
+		/*document.getElementById('button').addEventListener("click",function(){
+			document.querySelector(".layer").style.display = "block";
+		})
+
+		document.querySelector('.layer button').addEventListener("click",function(){
+			document.querySelector(".layer").style.display = "none";
+		})*/
+      
+		document.getElementById("button").addEventListener("click",function(){
+			/*3.用户*/
+			var layer = new Layer("认识前端—从一个弹窗说起！");
+			//显示弹窗
+			layer.show();
+		});
+	</script>
+</body>
+</html>
